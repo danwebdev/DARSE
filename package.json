@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "dependencies": {
+    "ampersand-collection": "^1.3.16",
+    "ampersand-router": "^1.0.5",
+    "ampersand-state": "^4.3.12",
+    "ampersand-subcollection": "^1.4.5",
+    "ampersand-view": "^7.1.4",
+    "debounce": "^1.0.0",
+    "todomvc-app-css": "^1.0.1",
+    "todomvc-common": "^1.0.1",
+    "react":"^0.13.3",
+    "react-tools":"^0.13.3",
+    "ampersand-react-view-mixin":"^0.0.5"
+  },
+  "devDependencies": {
+    "browserify": "5.10.1",
+    "watchify": "^2.0.0",
+    "reactify":"^1.1.1",
+    "node-sass":"^3.2.0",
+    "livereload":"^0.3.7"
+  },
+  "scripts": {
+    "build": "browserify js/app.js -t reactify --everything -o rabooks.bundle.js",
+    "start": "watchify js/app.js -t reactify --everything -o  rabooks.bundle.js & node-sass -w css/main.scss css/main.css & livereload"
+  }
+}
