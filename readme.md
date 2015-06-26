@@ -18,4 +18,5 @@ Uses Browserify for CommonJS modules and npm scripts for [Watchify, Reactify, Sa
 
 ## Credit
 
+Private note: Inductive approach: Uses 'reciepes' and 'reciepe' as concrete data entities. Will later be abstracted to 'collection' and 'item'.
 

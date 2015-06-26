@@ -1,20 +1,65 @@
 <!doctype html>
 <html lang="en" data-framework="ampersand">
-    <head>
-        <meta charset="utf-8">
-        <title>DARSE Dan's Ampersand.js • React.JS • Sass(Bourbon/Neat) - Example</title>
-        <link rel="stylesheet" href="css/main.css">
-        
-    </head>
-    <body id="body">
-        <h1>DARSE Dan's Ampersand.js • React.JS • Sass(Bourbon/Neat) - Example</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>DARSE Dan's Ampersand.js • React.JS • Sass(Bourbon/Neat) - Example</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body id="body">
+  <!--         <h1>DARSE Dan's Ampersand.js • React.JS • Sass(Bourbon/Neat) - Example</h1>
         <h2>Book Library Example (Inspired by Addy Osmani's Backbone Book Library example.)</h2>
         <section id="app">
 
         </section>
         <footer id="info">
 
-        </footer>
-        <script src="rabooks.bundle.js"></script>
-    </body>
+        </footer> -->
+
+  <div id="reciepes">
+    <div id="reciepesFormWrapper">
+        <div class="cool-text-input-wrapper">
+          <input id="reciepeNameField" class="cool-text-input" type="text" placeholder="Name">
+<!--           <label for "reciepeNameField" class="cool-text-input-label">Name</label>
+ -->        </div>
+        <div class="cool-text-input-wrapper">
+          <input id="reciepeDateField" class="cool-text-input" type="text" placeholder="Date">
+<!--           <label for "reciepeDateField" class="cool-text-input-label">Date</label>
+ -->        </div>
+    </div>
+<!--     <div id="reciepesSearchBarWrapper">
+  <div class="cool-text-input-wrapper">
+    <input id="reciepeSearchField" class="cool-text-input" type="text">
+    <label for "reciepeSearchField" class="cool-text-input-label">Search</label>
+  </div>
+</div> -->
+    <div id="reciepesListWrapper">
+      <ul id="reciepesList">
+        <li class="reciepe">
+          <span class="title">Reciepe A</span>
+        </li>
+        <li class="reciepe">
+          <span class="title">Reciepe B</span>
+        </li>
+        <li class="reciepe">
+          <span class="title">Reciepe C</span>
+        </li>
+        <li class="reciepe">
+          <span class="title">Reciepe D</span>
+        </li>
+        <li class="reciepe">
+          <span class="title">Reciepe E</span>
+        </li>
+      </ul>
+    </div>
+    <div id="reciepesFooter">
+      <span id="reciepeCountLabel">5 Reciepes</span>
+    </div>
+  </div>
+
+  <script src="rabooks.bundle.js"></script>
+</body>
+
 </html>

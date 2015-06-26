@@ -1,3 +1,91 @@
-body{
-	background-color: red;
+@import "./libs/normalize";
+@import "./libs/bourbon/bourbon";
+@import "./libs/neat/neat";
+
+//Fonts
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+//Vars
+$c1: #2B2D37;
+$c2: #2e303c;
+$c3: #FF4949;
+$c4: #8ee995;
+$c5: #fff;
+
+$reciepeBg: $c2;
+$reciepeText: $c4;
+$siteBg: $c1;
+
+
+$vRythm: 25px;
+$base-font: 'Montserrat', sans-serif;
+
+// Includes depending on vars
+@import "./components/forms";
+//
+body {
+  padding: 0;
+  background-color: $siteBg;
+  font-family: $base-font;
+  font-weight: 600;
+  color: $c4;
+}
+div#reciepes {
+  max-width: 700px;
+  width: 80%;
+  margin: 0 auto;
+  padding: $vRythm 0;
+}
+div#reciepesFormWrapper {
+	margin-bottom: 11px;
+	@include clearfix;
+	background-color: $c1;
+
+}
+
+div#reciepesFormWrapper div.cool-text-input-wrapper{
+	@include span-columns(6);
+  margin-bottom: $vRythm;
+}
+
+div#reciepesListWrapper {
+}
+ul#reciepesList {
+  margin: 0;
+  list-style: none;
+  @include clearfix;
+	padding-left: 0;
+}
+.reciepe {
+  @include span-columns(12);
+  background-color: $reciepeBg;
+  border-bottom: 0px solid $c1;
+  padding: $vRythm;
+	&:last-of-type{
+		border-bottom: 0px;
+	}
+
+	overflow: hidden;
+	position: relative;
+  margin-bottom: 8px;
+
+  border-left: 5px solid $c2;
+  border-right: 5px solid $c2;
+
+  @include transition(0.3s);
+  text-align: center;
+  &:hover{
+    border-left: 5px solid $c4;
+    border-right: 5px solid $c4;
+  cursor: pointer;
+  }
+}
+.reciepe span.title {
+	color: $reciepeText;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+div#reciepesFooter{
+	background-color: $c1;
+	padding: $vRythm;
 }
